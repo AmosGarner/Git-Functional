@@ -1,13 +1,86 @@
 {{ define "main" }}
 <div class="reveal">
     <div class="slides">
-        <section>
-            <h2>Barebones Presentation</h2>
-            <p>This example contains the bare minimum includes and markup required to run a reveal.js presentation.</p>
+        <!-- Intro -->
+        <section data-markdown="{{ $.Site.BaseURL }}slides/Intro/Title.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"
+            data-separator-notes="^Note:" data-charset="iso-8859-15">
         </section>
+        <section data-markdown="{{ $.Site.BaseURL }}slides/Intro/Summary.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"
+            data-separator-notes="^Note:" data-charset="iso-8859-15">
+        </section>
+        <section data-markdown="{{ $.Site.BaseURL }}slides/Intro/Backstory.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"
+            data-separator-notes="^Note:" data-charset="iso-8859-15">
+        </section>
+        <section data-markdown="{{ $.Site.BaseURL }}slides/Intro/Disclaimer.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"
+            data-separator-notes="^Note:" data-charset="iso-8859-15">
+        </section>
+
+        <!-- Terminology -->
         <section>
-            <h2>No Theme</h2>
-            <p>There's no theme included, so it will fall back on browser defaults.</p>
+            <section>
+                <h2>Terminology: 1/2</h2>
+                <dl>
+                    <dt><a href="https://github.com/hemanth/functional-programming-jargon#functor">Functor</a></dt>
+                    <dd>Set of rules that are expected from a function's I/O.</dd>
+                    <dt><a href="https://github.com/hemanth/functional-programming-jargon#lambda">Lambda</a></dt>
+                    <dd>A function that can be treated like a value.</dd>
+                    <dt><a href="https://github.com/hemanth/functional-programming-jargon#monoid">Monaid</a></dt>
+                    <dd>A function that takes in a input type and returns that same type.</dd>
+                    <dt><a href="https://github.com/hemanth/functional-programming-jargon#monad">Monad</a></dt>
+                    <dd>An object containing a return and a chain.</dd>
+                    <aside class="notes">
+                        * Contracts are how functions handle error reporting.
+                        * You can think of these like callback functions.
+                        * Addition is a monaid because it takes in 2 ints and returns the sum of those ints as an int.
+                        * A chain function is like the map function. So a monad would loop through some data and return
+                        something.
+                    </aside>
+                </dl>
+            </section>
+            <section>
+                <h2>Terminology: 2/2</h2>
+                <dl>
+                    <dt><a href="https://en.wikipedia.org/wiki/Immutable_object">Mutability</a></dt>
+                    <dd>Determines if data can or cannot change.</dd>
+                    <dt><a href="https://github.com/hemanth/functional-programming-jargon#side-effects">Side Effects</a></dt>
+                    <dd>Code in this function interacts with an external muttable source.</dd>
+                    <dt><a href="https://github.com/hemanth/functional-programming-jargon#purity">Purity</a></dt>
+                    <dd>The return value must only rely on its inputs without side-effects.</dd>
+                    <dt><a href="https://github.com/hemanth/functional-programming-jargon#currying">Currying</a></dt>
+                    <dd>Converting a function with multiple arguments into a one-at-a-time function.</dd>
+                </dl>
+            </section>
+        </section>
+
+        <!-- Languages -->
+        <section data-markdown="{{ $.Site.BaseURL }}slides/Functional/Languages.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"
+            data-separator-notes="^Note:" data-charset="iso-8859-15">
+        </section>
+
+        <!-- Common Problems and FP Solutions -->
+        <section>
+            <section data-markdown="{{ $.Site.BaseURL }}slides/Problems/CommonProblems.md" data-separator="^\n\n\n"
+                data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
+            </section>
+            <section data-markdown="{{ $.Site.BaseURL }}slides/Problems/HardToTest.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"
+                data-separator-notes="^Note:" data-charset="iso-8859-15">
+            </section>
+            <section data-markdown="{{ $.Site.BaseURL }}slides/Problems/HardToGrok.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"
+                data-separator-notes="^Note:" data-charset="iso-8859-15">
+            </section>
+            <section data-markdown="{{ $.Site.BaseURL }}slides/Problems/CodeIsBreaking.md" data-separator="^\n\n\n"
+                data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15">
+            </section>
+        </section>
+
+        <!-- My Thoughts -->
+        <section data-markdown="{{ $.Site.BaseURL }}slides/Outro/MyThoughts.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"
+            data-separator-notes="^Note:" data-charset="iso-8859-15">
+        </section>
+
+        <!-- Questions -->
+        <section data-markdown="{{ $.Site.BaseURL }}slides/Outro/Questions.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"
+            data-separator-notes="^Note:" data-charset="iso-8859-15">
         </section>
     </div>
 </div>
