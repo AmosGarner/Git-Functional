@@ -1,0 +1,7 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Git Functional"
+theme = "reveal-presentation"
+[params]
+description = "Description of presentation"
+author = "Amos Garner"
