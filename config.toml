@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://friendly-dijkstra-d7e7cf.netlify.com/"
 languageCode = "en-us"
 title = "Git Functional"
 theme = "reveal-presentation"
