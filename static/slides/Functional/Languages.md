@@ -3,7 +3,7 @@
 * [Lisp](https://en.wikipedia.org/wiki/Functional_programming#Lisp)
 * [Erlang](https://en.wikipedia.org/wiki/Functional_programming#Erlang)
 * [Kotlin](https://en.wikipedia.org/wiki/Functional_programming#Kotlin)
-* [Elm](http://elm-lang.org/)*
+* [Elm](https://elm-lang.org/)*
 * PHP, JS, Python **
 
 > Can be incorporated into any language.
